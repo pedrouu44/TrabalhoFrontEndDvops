@@ -2,15 +2,10 @@ name: Deploy após o gitpush
 
 on:
   push:
-    branches: [main]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches: [main] 
 
 jobs:
-  deploy:
+  check-update:
     runs-on: ubuntu-latest
 
     steps:
